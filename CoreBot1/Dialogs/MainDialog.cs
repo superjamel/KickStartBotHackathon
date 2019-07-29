@@ -74,16 +74,16 @@ namespace CoreBot1.Dialogs
             // If the child dialog ("BookingDialog") was cancelled or the user failed to confirm, the Result here will be null.
             if (stepContext.Result != null)
             {
-                var result = (BookingDetails)stepContext.Result;
+                //var result = (BookingDetails)stepContext.Result;
 
-                // Now we have all the booking details call the booking service.
+                //// Now we have all the booking details call the booking service.
 
-                // If the call to the booking service was successful tell the user.
+                //// If the call to the booking service was successful tell the user.
 
-                var timeProperty = new TimexProperty(result.TravelDate);
-                var travelDateMsg = timeProperty.ToNaturalLanguage(DateTime.Now);
-                var msg = $"I have you booked to {result.Destination} from {result.Origin} on {travelDateMsg}";
-                await stepContext.Context.SendActivityAsync(MessageFactory.Text(msg), cancellationToken);
+                //var timeProperty = new TimexProperty(result.TravelDate);
+                //var travelDateMsg = timeProperty.ToNaturalLanguage(DateTime.Now);
+                //var msg = $"I have you booked to {result.Destination} from {result.Origin} on {travelDateMsg}";
+                //await stepContext.Context.SendActivityAsync(MessageFactory.Text(msg), cancellationToken);
             }
             else
             {
